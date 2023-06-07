@@ -74,7 +74,7 @@ class Category(BaseModel):
         from django.urls import reverse
         return reverse("category-detail", kwargs={"slug": self.slug})
     
-class ArticleType(models.Model):
+class ArticleType(BaseModel):
     """Model definition for Article Type."""
 
     name = models.CharField(_('name'), max_length=50)
@@ -89,7 +89,7 @@ class ArticleType(models.Model):
         return self.name
     
 
-class Image(models.Model):
+class Image(BaseModel):
     """Model definition for Image."""
     alt = models.CharField(_('image alt'),null=True, blank=True, max_length=100)
     img= models.ImageField(_('image'),upload_to='images')
