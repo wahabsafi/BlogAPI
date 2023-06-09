@@ -17,6 +17,7 @@ LOCAL_APPS = [
     "blogapi.core.apps.CoreConfig",
     "blogapi.common.apps.CommonConfig",
     "blogapi.users.apps.UsersConfig",
+    "blogapi.blog.apps.BlogConfig",
     "blogapi.authentication.apps.AuthenticationConfig",
 ]
 
